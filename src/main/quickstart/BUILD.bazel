@@ -1,0 +1,7 @@
+load("@rules_python//python:defs.bzl", "py_library")
+
+py_library(
+    name = "quickstart",
+    visibility = ["//visibility:public"],
+    srcs = ["quickstart.py", "__init__.py"],
+)

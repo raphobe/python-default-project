@@ -1,0 +1,10 @@
+load("@rules_python//python:defs.bzl", "py_test")
+
+py_test(
+    name = "quickstart_test",
+    srcs = ["quickstart_test.py"],
+    imports = ["../../main"],
+    deps = [
+        "//src/main/quickstart",
+    ],
+)
